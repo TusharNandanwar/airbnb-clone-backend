@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use('/uploads', express.static(__dirname+'/uploads'));
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+  origin: ['https://papaya-lily-f49c07.netlify.app/', 'http://127.0.0.1:5173'],
 }));
 
 // async function uploadToS3(path, originalFilename, mimetype) {
